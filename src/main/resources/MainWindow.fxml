@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:controller="coffee.berg.jlogmanager.Controller"
+            xmlns:fx="http://javafx.com/fxml" fx:id="mainBorderPane">
+    <top>
+        <MenuBar fx:id="menuBar">
+            <Menu fx:id="File" text="File">
+                <SeparatorMenuItem />
+                <MenuItem fx:id="Exit" text="Exit" onAction="#Exit" />
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <center>
+        <TabPane fx:id="mainTabPane" />
+    </center>
+
+    <bottom>
+        <Label fx:id="statusLabel" prefWidth="800" />
+    </bottom>
+</BorderPane>
